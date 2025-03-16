@@ -1,0 +1,212 @@
+/* Basic body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #a8d5e2;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #4b778d;
+}
+
+/* Button styling */
+button {
+    background-color: #d3e0ea;
+    color: #4b778d;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #4b778d;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* General section styling - 3D effect */
+section {
+    margin-bottom: 20px;
+    background-color: #eae7dc;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d; /* Required for 3D transforms */
+}
+
+/* Section hover effect for stronger 3D feel */
+section:hover {
+    transform: translateY(-5px) translateZ(5px); /* Add slight depth */
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2), -8px -8px 20px rgba(255, 255, 255, 0.9);
+}
+
+/* Profile image styling */
+img {
+    width: 300px;
+    height: 300px; /* Keep square */
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #a8d5e2;
+    opacity: 0;
+    animation: glitchFade 1.5s ease forwards, glitchEffect 0.5s 1s ease forwards;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    
+}
+@keyframes glitchFade {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes glitchEffect {
+    0% {
+        transform: translate(-5px, 5px);
+    }
+    25% {
+        transform: translate(5px, -5px);
+    }
+    50% {
+        transform: translate(-5px, 5px);
+    }
+    75% {
+        transform: translate(5px, -5px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Skills Section */
+#skills {
+    background-color: #f8e0e0; /* Light pastel dust pink */
+    color: #4b778d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.8);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d;
+}
+
+#skills:hover {
+    transform: translateY(-5px) translateZ(5px);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2), -8px -8px 20px rgba(255, 255, 255, 0.9);
+}
+
+/* BIG gap between My Projects and Experience */
+#projects {
+    margin-bottom: 80px; /* Extra big gap */
+}
+
+/* Experience Section */
+#Experience {
+    background-color: #a8d5e2;
+    padding: 15px;
+    border-radius: 10px;
+     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.8);
+    margin-top: 80px; /* Extra space above Experience for even more separation */
+    transform-style: preserve-3d;
+}
+
+#Experience:hover {
+    transform: translateY(-5px) translateZ(5px);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2), -8px -8px 20px rgba(255, 255, 255, 0.9);
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f8e0e0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.8);
+    transform-style: preserve-3d;
+}
+#contact:hover {
+    transform: translateY(-5px) translateZ(5px);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2), -8px -8px 20px rgba(255, 255, 255, 0.9);
+}
+
+/* Headings styling */
+h2 {
+    color: #4b778d;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #a8d5e2;
+    color: #333;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #a8d5e2;
+    color: #4b778d;
+}
+
+/* Input field styling */
+input[type="text"], input[type="email"] {
+    width: calc(100% - 22px);
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Radio button styling */
+input[type="radio"] {
+    margin-left: 10px;
+}
+
+/* Links styling */
+a {
+    color: #4b778d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* Smooth scrolling between sections */
+html {
+    scroll-behavior: smooth;
+}
